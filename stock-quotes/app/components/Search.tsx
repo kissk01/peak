@@ -9,10 +9,6 @@ export default function Search() {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(
-      process.env.NEXT_PUBLIC_ALPHA_VANTAGE_SEARCH_QUERY,
-      ' process env '
-    );
     setSearch('');
     router.push(`/${search}/`);
   };
